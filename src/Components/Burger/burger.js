@@ -7,7 +7,16 @@ import Cheese from "./Cheese";
 import Tomato from "./Tomato";
 
 const Burger = () => {
-  const ingredients = ["patty", "lettuce", "bun", "cheese", "tomato"];
+  const ingredients = [
+    "patty",
+    "lettuce",
+    "bun",
+    "cheese",
+    "tomato",
+    "bun",
+    "cheese",
+    "tomato",
+  ];
 
   return (
     <>
@@ -28,11 +37,6 @@ const Burger = () => {
             return null;
         }
       })}
-      <Patty />
-      <Lettuce />
-      <Bun type="insert" />
-      <Cheese />
-      <Tomato />
       <Bun />
     </>
   );

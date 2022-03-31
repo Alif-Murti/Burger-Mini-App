@@ -13,7 +13,7 @@ const Bun = (props) => {
       bunClass = style.bun_insert;
       break;
     default:
-      bunClass = "";
+      bunClass = " ";
   }
 
   return <div className={`${style.bun} ${bunClass} `}></div>;
