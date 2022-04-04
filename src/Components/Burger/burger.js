@@ -1,34 +1,26 @@
 import React from "react";
-
 import Bun from "./Bun";
 import Patty from "./Patty";
 import Lettuce from "./Lettuce";
 import Cheese from "./Cheese";
 import Tomato from "./Tomato";
 
-const Burger = () => {
-  const ingredients = [
-    "patty",
-    "lettuce",
-    "bun",
-    "cheese",
-    "tomato",
-    "bun",
-    "cheese",
-    "tomato",
-  ];
+import style from "./burger.module.css";
+
+const Burger = (props) => {
+  //const ingridients = ['patty', 'lettuce', 'bun', 'cheese', 'patty', 'tomato', 'cheese', 'bun', 'lettuce', 'patty']
 
   return (
-    <>
+    <div className={style.burger}>
       <Bun type="top" />
-      {ingredients.map((item, index) => {
+      {props.ingridients.map((item, index) => {
         switch (item) {
           case "patty":
             return <Patty key={index} />;
           case "lettuce":
             return <Lettuce key={index} />;
           case "bun":
-            return <Bun key={index} />;
+            return <Bun type="insert" key={index} />;
           case "cheese":
             return <Cheese key={index} />;
           case "tomato":
@@ -38,7 +30,7 @@ const Burger = () => {
         }
       })}
       <Bun />
-    </>
+    </div>
   );
 };
 

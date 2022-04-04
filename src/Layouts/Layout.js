@@ -10,5 +10,4 @@ const DefaultLayout = (props) => {
     </>
   );
 };
-
 export default DefaultLayout;
