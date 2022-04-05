@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import style from "./layout.module.css";
 
 const Navigation = () => {
@@ -8,13 +9,13 @@ const Navigation = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="d-flex jsutify-content-center align-items-center">
-              <div className="px-2">
+            <div className="d-flex justify-content-center align-items-center">
+              <div class="px-2">
                 <Link to="/" className={style.navigation_item}>
                   Home
                 </Link>
               </div>
-              <div className="px-2">
+              <div class="px-2">
                 <Link to="/burger-maker" className={style.navigation_item}>
                   Burger Maker
                 </Link>

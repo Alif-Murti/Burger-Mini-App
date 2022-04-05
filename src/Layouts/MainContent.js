@@ -1,4 +1,5 @@
 import React from "react";
+
 import style from "./layout.module.css";
 
 const MainContent = (props) => {

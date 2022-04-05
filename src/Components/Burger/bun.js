@@ -1,7 +1,9 @@
 import React from "react";
 import style from "./burger.module.css";
+
 const Bun = (props) => {
   let bunClass;
+
   switch (props.type) {
     case "top":
       bunClass = style.bun_top;
@@ -13,7 +15,7 @@ const Bun = (props) => {
       bunClass = "";
   }
 
-  return <div className={`${style.bun} ${bunClass}`}></div>;
+  return <div className={`${style.bun} ${bunClass} `}></div>;
 };
 
 export default Bun;
